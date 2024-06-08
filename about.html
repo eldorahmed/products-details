@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Product</title>
+    <link rel="stylesheet" href="./stlye.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <h1 class="text-center mt-10 text-[60px] ">About Product</h1>
+    <div class="carousel w-full">
+      <div id="item1" class="carousel-item w-full justify-center">
+        <img id="img1" src="" class="w-96 h-full" />
+      </div>
+      <div id="item2" class="carousel-item w-full justify-center">
+        <img id="img2" src="" class="w-96" />
+      </div>
+      <div id="item3" class="carousel-item w-full justify-center">
+        <img id="img3" src="" class="w-96" />
+      </div>
+      <div id="item4" class="carousel-item w-full justify-center">
+        <img id="img4" src="" class="w-96" />
+      </div>
+    </div>
+    <div class="flex justify-center w-full py-2 gap-2">
+      <a href="#item1" class="btn btn-xs">1</a>
+      <a href="#item2" class="btn btn-xs">2</a>
+      <a href="#item3" class="btn btn-xs">3</a>
+    </div>
+    <div class="info flex justify-center">
+      <h3 class="text-center max-w-[700px] text-xl" id="description"></h3>
+    </div>
+
+    <div class="overflow-x-auto mx-auto xl:px-96  ">
+        <table class="table table-zebra">
+          <!-- head -->
+          <thead>
+            <tr>
+             
+              <th>Information</th>
+            
+            </tr>
+          </thead>
+          <tbody>
+            <!-- row 1 -->
+            <tr>
+                <td>availabilityStatus
+  
+              </td>
+                <td id="stock"></td>
+              </tr>
+            <tr>
+            
+              <td>minimumOrderQuantity</td>
+              <td id="min-order"></td>
+              
+            </tr>
+            <!-- row 2 -->
+            <tr>
+                <td>shippingInformation
+              </td>
+                <td id="shipment"></td>
+              </tr>
+            <tr>
+              <td>returnPolicy
+            </td>
+              <td id="return-policy"></td>
+            </tr>
+           
+          
+           
+          </tbody>
+        </table>
+      </div>
+    <!-- <script src="./request.js"></script> -->
+    <div id="overlay" class="overlay hidden">
+      <span class="loading loading-dots loading-lg"></span>
+    </div>
+    <script src="./about.js"></script>
+  </body>
+</html>
